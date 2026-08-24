@@ -1,0 +1,38 @@
+{
+  "name": "genpark-two-wheeler-ev-mobility-telematics-fleet-onboarding-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Two-wheeler electric vehicle (EV) mobility telematics fleet manager and driver rent-to-own battery swap onboarding engine.",
+  "author": "genpark",
+  "category": "mobility",
+  "tags": [
+    "ev-mobility",
+    "battery-swap",
+    "fleet-telematics",
+    "rent-to-own",
+    "max-africa"
+  ],
+  "inputs": {
+    "driver_national_id": {
+      "type": "string"
+    },
+    "battery_swap_station_id": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "driver_id": {
+      "type": "string"
+    },
+    "vehicle_type": {
+      "type": "string"
+    },
+    "battery_state_of_health_pct": {
+      "type": "number"
+    },
+    "vehicle_financing_rent_to_own_daily_ngn": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
